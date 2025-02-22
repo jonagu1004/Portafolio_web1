@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Examen Practico</title>
+</head>
+<body>
+	<hgroup style="color: blue; text-align: center;">
+		<h1>Programación WEB I PRIM25</h1>
+		<h2>Examen práctico parcial 1</h2>
+	</hgroup>
+	<hgroup style="color: rgb(255, 20, 20); text-align: center;">
+		<h3>Profesora: Imelda Deyanira Hernández Martínez</h3>
+		<h3>Alumno: Jonathan Emmanuel Gaytán Uresti</h3>
+	</hgroup>
+	<div">
+		<header style="display: flex; align-items: center; gap: 5px;">
+			<h5 style="background-color: rgb(0, 4, 255); padding: 10px; padding-left: 250px; padding-right: 250px; color: white;">Visita el Estadio de los Tigres</h5>
+			<img src="Estadio.png" alt="Estadio" usemap="#mapaTigres">
+			<map name="mapaTigres">
+				<area coords="0,0,500,500" href="javascript:void(0);" onclick="mostrar()">
+			</map>
+
+			<iframe id="iframeImagen" src="" style="border: none; "></iframe>
+			
+		</header>
+	</div>
+	<h3 style=" background-color: white; text-align: center; color: white;">.</h3>
+	<div>
+		<header style="display: flex; align-items: center; justify-content: center; gap: 50px; ">
+			<img src="1.png" alt="">
+			<img src="2.png" alt="">
+			<img src="3.png" alt="">
+		</header>
+	</div>
+	
+	<h5 style=" background-color: blue; text-align: center; color: white;">Universidad Politecnica De SLP</h5>
+
+	<script>
+		function mostrar() {
+			document.getElementById('iframeImagen').src = "https://www.tigres.com.mx/es/";
+		}
+	</script>
+	<footer>
+		<p><i>C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.</i>.</p>
+	</footer>
+
+</body>
+
+</html>
