@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(170, 250, 253)">
+    <hgroup style="text-align: center">
+      <h1>Volkswagen Potosina</h1>
+      <h3>Compras online</h3>
+    </hgroup>
+
+    <form action="" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Informacion General del Cliente</legend>
+        <table align="center">
+          <tr>
+            <td></td>
+            <td><label for="ap">Apellido Paterno: </label></td>
+            <td><label for="am">Apellido Materno: </label></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="nombre">Nombre: </label>
+              <input type="text" name="Nombre" id="nombre" />
+            </td>
+            <td><input type="text" name="ap" id="ap" /></td>
+            <td><input type="text" name="am" id="am" /></td>
+          </tr>
+          <tr>
+            <td><label for="user">Nombre de usuario:</label></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="usuario"
+                size="10"
+                readonly
+                title="Nombre de usuario"
+              />
+            </td>
+            <td>
+              <label for="pass"> Password</label>
+              <input
+                type="Password"
+                name="pass"
+                id="pass"
+                size="15"
+                maxlength="30"
+                placeholder="Contraseña"
+              />
+            </td>
+            <td>
+              <label for="fechareg">Fecha de registro: </label>
+              <input type="date" name="fechareg" id="fechareg" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <form action="" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Datos para facturar</legend>
+        <table align="center">
+          <tr>
+            <td><label for="paises">País</label></td>
+            <td><label for="ciudad">Ciudad</label></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="paises" id="paises" size="3">
+                <option value="1">Mexico</option>
+                <option value="2">Canada</option>
+                <option value="3">Reino unido</option>
+              </select>
+            </td>
+            <td>
+              <select name="ciudad" id="ciudad" size="3">
+                <option>San Luis Potosí</option>
+                <option>Monterrey</option>
+                <option>Cd. Valles</option>
+              </select>
+            </td>
+            <td>
+              <label for="ca">Calle</label><br />
+              <input
+                name="ca"
+                id="ca"
+                size="15"
+                maxlength="30"
+                placeholder="Calle"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ne">Numero de Casa</label>
+              <input
+                name="ne"
+                id="ne"
+                size="15"
+                maxlength="30"
+                placeholder="Numero Exterior"
+              />
+            </td>
+            <td>
+              <label for="co">Colonia</label>
+              <input
+                name="co"
+                id="co"
+                size="15"
+                maxlength="30"
+                placeholder="Colonia"
+              />
+            </td>
+            <td>
+              <label for="emile">E-mail</label>
+              <input
+                name="emile"
+                id="emile"
+                size="15"
+                maxlength="30"
+                placeholder="E-mail"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="rfc">R.F.C.</label>
+              <input
+                name="rfc"
+                id="rfc"
+                size="15"
+                maxlength="30"
+                placeholder="R.F.C."
+              />
+            </td>
+
+            <td>
+              <label for="cp">C.P</label>
+              <input
+                name="cp"
+                id="cp"
+                size="15"
+                maxlength="30"
+                placeholder="C.P"
+              />
+            </td>
+            <td>
+              <input type="checkbox" name="pasa1" id="pasa1" value="1" />
+              <label for="pasa1">Aceptar terminos y condiciones</label><br />
+              <input type="submit" name="enviar" id="enviar" value="Eviar " />
+              <input
+                type="reset"
+                name="restablecer"
+                id="restablecer"
+                value="Restablecer"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
