@@ -1,14 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio
-    </title>
+    <title>Barra de Navegación</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        nav {
+            background-color: #0077cc;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover, nav .active {
+            background-color: #005fa3;
+        }
+
+        .menu-practicas {
+            position: relative;
+        }
+
+        .submenu {
+            position: absolute;
+            display: none;
+            background-color: #0077cc;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .submenu a {
+            display: block;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        .submenu a:hover {
+            background-color: #005fa3;
+        }
+
+        .menu-practicas:hover .submenu {
+            display: block;
+        }
+    </style>
 </head>
-</style>
-</head>
-<body style="background-color: rgb(55, 182, 255);">
+<body>
+
+<nav>
+    <a href="index.html" class="active" onclick="setActive(this)">Inicio</a>
+    <div class="menu-practicas">
+        <a href="#" onclick="setActive(this)">Portafolio</a>
+        <div class="submenu">
+            <a href="Parcial1.html" onclick="setActive(this)">Parcial 1</a>
+            <a href="Parcial2.html" onclick="setActive(this)">Parcial 2</a>
+            <a href="#" onclick="setActive(this)">Parcial 3</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function setActive(element) {
+        document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
 <header style="background-color: white; text-align: center;">
     <img src="UPSLP.png" alt="">
     <h1 >Portafolio de evidencias</h1>
@@ -74,5 +150,6 @@
     <li>Práctica 4: Aplicación web interactiva</li>
 </ul>
 </section>
+
 </body>
 </html>
