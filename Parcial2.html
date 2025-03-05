@@ -45,7 +45,7 @@
 <body>
     <nav>
         <a href="index.html" class="active">Inicio</a>
-        <a href="formularios.html" onclick="cargarContenido('formularios.html', event)">Formularios</a>
+        <a href="#" onclick="cargarContenido('formularios.html', event)">Formularios</a>
     </nav>
 
     <div id="contenido">
@@ -53,20 +53,21 @@
 
     <script>
         function cargarContenido(pagina, event) {
-            event.preventDefault();
+            event.preventDefault(); 
             fetch(pagina)
-                .then(response => response.text())
+                .then(response => response.text()) 
                 .then(data => {
-                    document.getElementById('contenido').innerHTML = data;
+                    document.getElementById('contenido').innerHTML = data; 
                 })
                 .catch(error => {
                     console.error('Error al cargar el contenido:', error);
                 });
-            setActive(event.target);
+            setActive(event.target); 
         }
+
         function setActive(element) {
             document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
-            element.classList.add('active');
+            element.classList.add('active'); 
         }
     </script>
 </body>
