@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial 1</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-
 
         nav {
             background-color: #0077cc;
@@ -47,22 +45,32 @@
 <body>
     <nav>
         <a href="index.html" class="active">Inicio</a>
-        <a href="#" onclick="cargarContenido('ExamenPractico.html')">Examen Práctico</a>
-        <a href="#" onclick="cargarContenido('Inframe.html')">Inframe</a>
-        <a href="#" onclick="cargarContenido('Tablas.html')">Tablas</a>
+        <a href="ExamenPractico.html" onclick="cargarContenido('ExamenPractico.html', event)">Examen Práctico</a>
+        <a href="Inframe.html" onclick="cargarContenido('Inframe.html', event)">Inframe</a>
+        <a href="Tablas.html" onclick="cargarContenido('Tablas.html', event)">Tablas</a>
     </nav>
 
+    <div id="contenido">
+    </div>
+
     <script>
-        function cargarContenido(archivo) {
-            fetch(archivo)
+        function cargarContenido(pagina, event) {
+            event.preventDefault();
+            fetch(pagina)
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('contenido').innerHTML = data;
                 })
                 .catch(error => {
-                    document.getElementById('contenido').innerHTML = "<p>Error al cargar el contenido.</p>";
+                    console.error('Error al cargar el contenido:', error);
                 });
+            setActive(event.target);
+        }
+        function setActive(element) {
+            document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
         }
     </script>
 </body>
 </html>
+
