@@ -1,0 +1,35 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: antiquewhite;
+    overflow: auto; 
+    
+}
+
+li a {
+    background-color: rgb(182, 129, 60);
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(196, 63, 63);
+}
+
+
+li a.activo {
+    background-color: rgb(130, 161, 161);
+    color: aliceblue;
+}
+
+li a.activo:hover:not(.activo) { 
+    background-color: blueviolet;
+    color: lightblue;
+}
+
