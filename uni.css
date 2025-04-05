@@ -1,0 +1,68 @@
+
+body{
+    background-color: lightcoral;
+}
+  
+  
+  section {
+    flex: 1 1 40%;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid lightcyan;
+    border-radius: 10px;
+  }
+  
+  .ejemplo {
+    margin: 1rem 0;
+    background-color: white;
+    border: 1px solid darkmagenta;
+    border-radius: 6px;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Absolutas */
+  .px {
+    padding: 20px;
+  }
+  
+  .pt {
+    font-size: 14pt;
+  }
+  
+  .cm {
+    margin: 1cm;
+  }
+  
+  .mm {
+    box-shadow: 0 0 5mm rgba(0,0,0,0.4);
+  }
+  
+  .in {
+    width: 2in;
+    height: 1in;
+  }
+  
+  /* Relativas */
+  .porcentaje {
+    width: 80%;
+  }
+  
+  .em {
+    padding: 2em;
+  }
+  
+  .rem {
+    font-size: 1.5rem;
+  }
+  
+  .vw {
+    width: 50vw;
+  }
+  
+  .vh {
+    height: 20vh;
+  }
+  
+  
