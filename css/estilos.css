@@ -49,9 +49,17 @@ header{
 
 
 
-.titulo{
-    font-size: 60px;
-    margin-bottom: 15px;
+.titulo {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 50px; 
+    color:white; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Bangers", system-ui;
+    
 }
 
 .copy{
@@ -59,12 +67,15 @@ header{
     font-size: 25px;
 }
 
-.subtitulo{
-    padding: 20px;
-    text-align: center;
-    color: darkred;
-    margin-bottom: 40px;
+.subtitulo {
     font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px; 
+    color: darkred; 
+    text-transform: capitalize; 
+    font-family: "Staatliches", sans-serif;
 }
 .subH{
     color: darkred;
@@ -193,12 +204,12 @@ header{
 table{
     border: solid 2px;
     border-collapse: collapse;
-    background: linear-gradient(#5d23f09a, #4d07f088);
+    background: linear-gradient(darkred, red);
     
     
 }
 th{
-    background: linear-gradient(#8525f3b4, #7008e69c);
+    background: linear-gradient(red, darkred);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
 }
@@ -210,7 +221,86 @@ td{
 .lista{
     text-align: justify;
 }
-
+.contenedor {
+    padding: 20px;
+    
+    font-family: Arial, sans-serif;
+  }
+  
+  .subtitulo {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .act {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cont-act {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+  }
+  
+  .cont-act img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .n-act {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  details {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .lista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .lista strong {
+    color: #333;
+  }
+  
+  cite {
+    font-style: italic;
+  }
+  
 .redes-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -271,3 +361,46 @@ td{
   .social-icon i:hover {
     color: #003366;
   }
+  .faq-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item[open] {
+    background-color: #fff;
+  }
+  
+  .faq-question {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.05rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #444;
+  }
+  
+  .faq-item p {
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+    background-color: #f1f1f1;
+  }
+  
