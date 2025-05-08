@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <script type="text/javascript" src="leer.js"></script>
+    <link rel="stylesheet" href="leercss.css">
+</head>
+
+<body>
+    <h1>Registro de usuario</h1>
+    
+    <form name="formulario">
+        <label for="user">Nombre:</label>
+        <input type="text" name="user" id="user">
+
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+
+        <label for="carrera">Carrera:</label>
+        <select name="carrera" id="carrera">
+            <option value="ITI">Ing. T. Información</option>
+            <option value="ITEM">Ing. Telématica</option>
+        </select>
+
+        <label>Género:</label>
+        <input type="radio" name="genero" id="femenino" value="f">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" name="genero" id="masculino" value="m">
+        <label for="masculino">Masculino</label><br>
+
+        <input type="button" name="envio" id="envio" value="Enviar" onclick="leer()">
+    </form>
+
+    <h2>Tus datos son:</h2>
+    <div id="resultado"></div>
+</body>
+
+</html>
